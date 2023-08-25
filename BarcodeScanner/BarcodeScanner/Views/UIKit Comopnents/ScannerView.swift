@@ -11,6 +11,7 @@ struct ScannerView: UIViewControllerRepresentable {
     
     // A binding to scannedCode
     @Binding var scannedCode: String
+    @Binding var alertItem: AlertItem?
     
     func makeUIViewController(context: Context) -> ScannerVC {
         ScannerVC(scannerDelegate: context.coordinator)
@@ -29,6 +30,7 @@ struct ScannerView: UIViewControllerRepresentable {
         
         private let scannerView: ScannerView
         
+        // To communicate changes from Coordinator --> Swift UI view.
         init(scannerView: ScannerView) {
             self.scannerView = scannerView
         }
@@ -39,17 +41,16 @@ struct ScannerView: UIViewControllerRepresentable {
         }
         
         func didSurface(error: CameraError) {
-            print(error.rawValue)
+            switch error {
+            case .invalidDeviceInput:
+                scannerView.alertItem = AlertContext.invalidDeviceInput
+            case .invalidScannedValue:
+                scannerView.alertItem = AlertContext.invalidScanType
+            }
+            print("ERROR")
         }
     }
 }
-
-struct ScannerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScannerView(scannedCode: .constant("1234"))
-    }
-}
-
 
 // Step 1: ViewController --> communicates updates to Coordinator
 
