@@ -13,6 +13,7 @@ enum CameraError: String {
     case invalidScannedValue = "The value scanned is not valid. This app scans EAN-8 and EAN-13."
 }
 
+// Delegate to communicate updates from ViewController to Controller
 protocol ScannerVCDelegate: AnyObject {
     func didFind(barcode: String)
     func didSurface(error: CameraError)

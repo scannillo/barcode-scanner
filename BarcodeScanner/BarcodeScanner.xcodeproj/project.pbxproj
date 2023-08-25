@@ -12,6 +12,7 @@
 		80168F602A992F730041C35D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80168F5F2A992F730041C35D /* Assets.xcassets */; };
 		80168F632A992F730041C35D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80168F622A992F730041C35D /* Preview Assets.xcassets */; };
 		80168F6B2A9933980041C35D /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80168F6A2A9933980041C35D /* ScannerVC.swift */; };
+		80168F6D2A993DA20041C35D /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80168F6C2A993DA20041C35D /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		80168F622A992F730041C35D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80168F692A9933220041C35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		80168F6A2A9933980041C35D /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		80168F6C2A993DA20041C35D /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				80168F5B2A992F710041C35D /* BarcodeScannerApp.swift */,
 				80168F5D2A992F710041C35D /* BarcodeScannerView.swift */,
 				80168F6A2A9933980041C35D /* ScannerVC.swift */,
+				80168F6C2A993DA20041C35D /* ScannerView.swift */,
 				80168F5F2A992F730041C35D /* Assets.xcassets */,
 				80168F612A992F730041C35D /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80168F6B2A9933980041C35D /* ScannerVC.swift in Sources */,
+				80168F6D2A993DA20041C35D /* ScannerView.swift in Sources */,
 				80168F5E2A992F710041C35D /* BarcodeScannerView.swift in Sources */,
 				80168F5C2A992F710041C35D /* BarcodeScannerApp.swift in Sources */,
 			);
